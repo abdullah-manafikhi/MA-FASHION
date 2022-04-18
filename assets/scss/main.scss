@@ -1,0 +1,331 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin+Sketch:wght@700&family=Notable&display=swap');
+body{
+    color: $primary-color;
+    padding: 0rem;
+    margin: 0rem;
+    width: 100%;
+}
+
+button{ 
+    border-color: transparent !important;
+}
+
+
+// ###### navbar #########
+
+.ma__nav{
+    background-color: $primary-color !important;
+   
+    .nav-item{
+        margin-left: 2rem;
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            border-bottom: 3px solid $secondary-color;
+            margin: 0 2rem;
+            transition:all 300ms linear 0s;
+            -webkit-transition:all 300ms linear 0s;
+            -moz-transition:all 300ms linear 0s;
+            -ms-transition:all 300ms linear 0s;
+            -o-transition:all 300ms linear 0s;
+        }
+        &:hover:after {
+            width: 90%;
+          }
+       
+    }
+    .nav-link{
+        color: $tertiary-color !important;
+        font-size: 18px;
+        font-weight: 500 ;
+        margin-left: 3rem;
+       
+    }
+    
+    &__links{
+    margin-top: 1rem;
+    margin-left: 30%;
+    }
+    
+}
+
+
+
+// ###### Home ######
+.ma__home{
+    border-radius: 0px 0px 30px 30px;
+    -webkit-border-radius: 0px 0px 30px 30px;
+    -moz-border-radius: 0px 0px 30px 30px;
+    -ms-border-radius: 0px 0px 30px 30px;
+    -o-border-radius: 0px 0px 30px 30px;
+}
+
+
+.ma__home{
+    color: white;
+    background-color: $primary-color;
+    height: 30rem;
+
+
+    &__img{
+        height: 100%;
+        width: 35rem;
+        position: relative;
+        right: 0rem;
+        top: 0;
+        border-radius: 40%;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        -ms-border-radius: 40%;
+        -o-border-radius: 40%;
+}
+
+    &__intro{
+        color: $tertiary-color;
+        padding-right: 7rem ; 
+    }
+
+    &__btn1{
+        background-color: $secondary-color;
+        width: 10rem;
+    }
+
+    &__btn2{
+        width: 5rem;
+        height: 2.5rem;
+        margin-left: .5rem ;
+    }
+
+    &__btn__p{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+.ma__brand{
+    color: $tertiary-color;
+    font-weight: 500;
+    font-size: 42px ;
+    font-family: 'Notable', sans-serif;
+}
+
+.ma__gallery__hdr{
+    padding: 4.5rem 0rem;
+}
+
+.ma__sec__hdr{
+    padding-bottom: -1rem;
+    border-bottom: $primary-color 2px solid;
+    font-weight: 400;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ma__depart{
+    margin-bottom: 0rem;
+
+
+    .swiper {
+        width: 85%;
+        height: 35rem;
+
+        &-button-next{
+            position: absolute;
+            color: $secondary-color;
+            right: 0rem;
+        }
+
+        &-button-prev{
+            position: absolute;
+            color: $secondary-color;
+            left: 0rem;
+        }
+
+        &-pagination-bullet-active{
+            background: $secondary-color !important;
+        }
+
+        &-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            .card{
+                border: .2px solid $primary-color ;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+}
+
+            .crd_img{
+                height: 10rem !important;
+            }
+
+            .img {
+                display: block;
+                width: 100%;
+                height: 5rem;
+                object-fit: cover;
+            }
+
+            .ma__prod__btn{
+                width: 8rem;
+                margin: .3rem ;
+                border: 0px;
+            }
+        
+            .ma__prod__btn1{
+                background-color: $secondary-color;
+            }
+        
+            .ma__prod__btn2{
+                background-color: $primary-color;
+            }
+        }
+        
+    }
+}
+
+
+
+/**************Values***********/
+#values{
+    padding:  6rem 2rem;
+  }
+  
+  .values{
+    background-color: #fff;
+    border-radius: 2rem;
+    width: 100%;
+    position: relative;
+    
+        .section-header{
+            color: $secondary-color;
+        }
+
+        .box {
+        padding: 30px;
+        box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+        text-align: center;
+        transition: 0.3s;
+        height: 100%;
+        }
+        .box img {
+      padding: 30px 50px;
+      transition: 0.5s;
+      transform: scale(1.1);
+        }
+        .box h3 {
+      font-size: 24px;
+      color: $secondary-color;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+        .box:hover {
+      box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    }
+        .box:hover img {
+      transform: scale(1);
+    }
+}
+
+  .ma__foot{
+      border-radius: 30px 30px 0px 0px;
+      -webkit-border-radius: 30px 30px 0px 0px;
+      -moz-border-radius: 30px 30px 0px 0px;
+      -ms-border-radius: 30px 30px 0px 0px;
+      -o-border-radius: 30px 30px 0px 0px;
+}
+
+  .ma__foot{
+    background: $primary-color;
+    margin-top: 10rem 0rem 2rem 0rem;
+
+
+    &__row{
+        padding: 5rem 0rem ;
+        margin-bottom : 2rem;
+        border-bottom: 2px $tertiary-color solid;
+    }
+
+      &__brand{
+        color: $tertiary-color!important;
+        font-weight: 500;
+        font-size: 25px ;
+        font-family: 'Notable', sans-serif;
+      }
+
+      .ma__media{
+        margin-left: 1rem;
+        font-size: 25px;
+        color: $tertiary-color;
+
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+
+    
+   &__h{
+    color: $tertiary-color;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    }
+
+    &__p{
+        color: $tertiary-color;
+        margin-top : -0.8rem ;
+    }
+
+    .ma__cpysymbol{
+        color: $tertiary-color;
+        font-size: 15px;
+    }
+    
+  }
+
+  @media (max-width: 600px) {
+    body{
+        border: 2px solid red;
+        width: 100%;
+        padding: 0;
+    }
+
+    .ma__home__img{
+        display: none;
+    }
+  }
+  
+
+ 
+
+  
+  
+ 
+
+
+
+
+
+
+

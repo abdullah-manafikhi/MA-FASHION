@@ -1,0 +1,396 @@
+@import 'config';
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.ma__nav{
+    height: auto;
+    margin-bottom: 2rem;
+
+    &__brand{
+        color: $tertiary-color !important;
+        font-size: 35px;
+        margin-left: 2rem;
+        
+        }
+}
+
+.ma__shop__h{
+    color: $primary-color;
+}
+
+.ma__filter__closed{
+    margin-left: -15rem;
+    transition: 800ms;
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -ms-transition: 800ms;
+    -o-transition: 800ms;
+}
+.ma__filter__opened{
+    margin-left: 0rem;
+    transition: 800ms;
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -ms-transition: 800ms;
+    -o-transition: 800ms;
+}
+
+
+.ma__filter{    
+    position: fixed;
+    z-index: +200000 !important;
+
+ 
+
+    &__window{
+        position: fixed;
+        height: 20rem;
+        width: 15rem;
+        overflow: hidden;
+        background-color: #f5f1f1;
+        
+    }
+
+    &__btn__div{
+        padding: 0rem;
+        position: relative;
+        left: 15rem;
+    }
+
+    &__btn{
+        writing-mode: tb-rl;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+
+    &__btn{
+        position: relative;
+        top: 4rem;
+        left: -2.5rem;
+        display: inline-block;
+        text-align: center;
+        background-color: $secondary-color;
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 5px;
+        width: 7rem;
+        color: $tertiary-color;
+        height: 2rem;
+        border-color: transparent;
+
+        &:hover{
+            background-color: $primary-color ;
+        }
+    }
+
+    &__sub__h{
+        margin: .8rem 0rem;
+
+        &__item{
+            margin-left: 1rem ;
+        }
+    }
+
+    &__sec{
+        margin-left: 1.2rem;
+    }
+
+    &__submit{
+        border-color: transparent;
+        width: 70%;
+        margin-top: 1rem ;
+        background-color: $secondary-color;
+        color: $tertiary-color;
+        font-size: 18px;
+        letter-spacing: 3px;
+        font-weight: 400;
+
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+    
+}
+
+//======= FORM ========
+.ma__form__sec{
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: +10;
+    position: fixed;
+    background-color: rgba($color: black, $alpha: 0.7);
+    padding: 1rem;
+
+    .ma__form{
+        overflow: scroll;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: +10;
+        height: 38rem;
+        width: 30rem;
+        margin : 0rem;
+        background-color:rgba($color: white, $alpha: 0.8) ;
+       
+
+        .ma__form__closebtn{
+            background-color: transparent;
+            width: 2rem;
+            border-color: transparent;
+            position: fixed;
+        }
+
+        .ma__form__succes{
+            visibility: visible;
+            display: block;
+            color: green;
+        }
+
+        .ma__form__failed{
+            visibility: visible;
+            display: block;
+            color: red;
+        }
+
+        &__msg{
+            margin-bottom: .5rem ;
+            color: red;
+        }
+
+        .ma__form__input{
+            border-color: transparent;
+            height: 2.5rem;
+        }
+
+        &__btn{
+            border-color: transparent;
+            width: 8rem;
+            height: 2.5rem;
+            background-color: $secondary-color;
+            color: $tertiary-color;
+            font-size: 20px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+
+        &__img{
+            width: 4rem;
+            height: 2.5rem;
+
+            &__h{
+              font-size: 25px;  
+            }
+        }
+    }
+
+}
+
+// ============ CART =============
+
+.btn__container{
+    z-index: +10000;
+    position: fixed ;
+    top: 0rem;
+    left: 0rem ;
+    transform: translateY(800%);
+    -webkit-transform: translateY(800%);
+    -moz-transform: translateY(800%);
+    -ms-transform: translateY(800%);
+    -o-transform: translateY(800%);
+}
+
+.ma__cart__opnbtn{
+    margin-right : 0.5rem ;
+    position: relative;
+    z-index: +10000 !important;
+    display: block;
+    font-size: 20px;
+    width: 4rem;
+    height: 4rem;
+    color: white !important;
+    background-color: $secondary-color;
+    border-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.ma__cart__opnbtnx{
+    display: none;
+}
+
+.ma__cart__sec{
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: +1000000 !important;
+    position: fixed;
+    background-color: rgba($color: black, $alpha: 0.7);
+
+    .ma__cart__closebtn{
+        background-color: transparent;
+        width: 2rem;
+        border-color: transparent;
+        position: relative;
+        right: 3rem;
+    }
+
+    .ma__cart{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: +10;
+        height: 40rem;
+        width: 50rem;
+        overflow-y:auto ;
+        margin-top:0rem;
+        background-color:white ;
+
+
+        &__item{
+            display: flex;
+            justify-content: space-around   ;
+
+            .ma__item__clsbtn{
+                border-color: transparent;
+            }
+        }
+       
+        &__item{
+            background-color: #f5f1f1 ;
+            padding: 1rem 0rem;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            
+        }
+
+        &__img{
+            width: 9rem;
+            height: 7rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        &__item__name{
+            font-size: 20px;
+            padding : 2rem 0rem ;
+        }
+
+        &__tot{
+            height: 5rem;
+            background-color: #f5f1f1;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        &__purchbtn{
+            height: 2.5rem;
+            width: 8rem;
+            border-color: transparent;
+            color: $tertiary-color;
+            background-color: $secondary-color;
+            font-size: 20px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            &:hover{
+                background-color: $primary-color    ;
+            }
+}
+
+        
+
+    }
+}
+
+// ====== shop grid ========
+
+  .ma__grid__container{
+    margin: 5rem 0rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 10px;
+
+    .ma__prod__btn{
+        width: 8rem;
+        margin: .3rem ;
+        border: 0px;
+    }
+
+    .ma__prod__btn1{
+        background-color: $secondary-color;
+    }
+
+    .ma__prod__btn2{
+        background-color: $primary-color;
+    }
+    .card{
+        z-index: +1;
+        transition: 500ms;
+        
+        &:hover{
+            transform: scale(1.08);
+            -webkit-transform: scale(1.08);
+            -moz-transform: scale(1.08);
+            -ms-transform: scale(1.08);
+            -o-transform: scale(1.08);
+            box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+    }
+    
+
+   
+}
+
+
+@media (max-width: 830px) {
+    .ma__grid__container{
+        grid-template-columns:  auto auto;
+
+    }
+  }
+
+  @media (max-width: 650px) {
+    .ma__grid__container{
+        grid-template-columns:  auto ;
+    }
+
+    .ma__form{
+        width : 18rem !important;
+        height: 35rem !important;
+    }
+
+    .ma__cart{
+        width: 25rem !important;
+        height: 30rem !important;
+    }
+    
+  }
+  

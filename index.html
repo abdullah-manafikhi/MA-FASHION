@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--======= boootstrap link =========-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--======= css link ================-->
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <!--======= box icons link ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>MA Fashion</title>
+    <!--======= swiper css ==============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <!--========= navbar ===========-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ma__nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ma__nav__links" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#values">Values</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!--========== Home ============-->
+
+    <section class="ma__home ">
+        <div class="container d-grid align-content-center pt-3">
+            <div class="row mt-3">
+                <div class="ma__home__div col-sm-6 d-grid align-content-center">
+                    <p class="ma__home__intro text-start">
+                        <span class="ma__brand">MA FASHION</span> <br>
+                        Lorem ipsum dolor ipsam, laborum quia quibusdam iste unde sit voluptates esse, officia, alias fuga accusantium optio ratione eum excepturi!                  
+                    </p>
+                    <div class="ma__home__btns text-start">
+                        <button onclick="location.href = 'shop.html';" type="button" class="btn btn-secondary ma__home__btn1">Start Shopping</button>
+                        <a href="#values"><button type="button" class="btn btn-secondary ma__home__btn2"><p class="ma__home__btn__p">About</p></button></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                    <img src="assets/images/modified.jpg" alt="" class="img-fluid ma__home__img">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!--========= gallery ===========-->
+    <section>
+        <!--===shoes-department-->
+        <div class="container ma__depart">
+            <div class="row text-center ma__gallery__hdr">
+                <h2 class="ma__sec__hdr">Shoes Department</h1>
+            </div>
+            <div class="row">
+                        <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="shoes__swiper" >
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+            <!--===pants-dipartment-->
+        <div class="container ma__depart">
+            <div class="row text-center ma__gallery__hdr">
+                <h2 class="ma__sec__hdr">Pants Department</h1>
+            </div>
+            <div class="row text-center">
+                        <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="tops__swiper">
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+            <!--fulloutfit-department-->
+        <div class="container ma__depart">
+            <div class="row text-center ma__gallery__hdr">
+                <h2 class="ma__sec__hdr">Full Outfit Department</h1>
+            </div>
+            <div class="row">
+                        <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="full__swiper">
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!--========= Values========= -->  
+         <section id="values" class="values">
+
+            <div class="container-fluid text-center justify-content-center" >
+      
+              <div class="ma__sec__hdr">
+                <h2 class="h3__title">Our Values</h2>
+              </div>
+      
+              <div class="row">
+      
+                <div class="col-lg-4">
+                  <div class="box">
+                    <img src="assets/images/values__1.png" class="img-fluid" alt="">
+                    <h3>Ad cupiditate sed est odio</h3>
+                    <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 mt-4 mt-lg-0" >
+                  <div class="box">
+                    <img src="assets/images/values__2.png" class="img-fluid" alt="">
+                    <h3>Voluptatem voluptatum alias</h3>
+                    <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                  <div class="box">
+                    <img src="assets/images/values__3.png" class="img-fluid" alt="">
+                    <h3>Fugit cupiditate alias nobis.</h3>
+                    <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+                  </div>
+                </div>
+      
+              </div>
+      
+            </div>
+      
+          </section>
+
+
+    <!--========== footer =========-->
+    <section class="ma__foot">
+        <div class="container text-center" style="margin-top: 7rem;" >
+            <div class="row ma__foot__row">
+                <div class="col-lg-4" style="margin-top: 2rem;">
+                    <p class="ma__foot__brand">
+                        MA FASHION
+                    </p>
+                    <div class="ma__foot__sociel">
+                        <a><i class='bx bxl-facebook ma__media'></i></a>
+                        <a><i class='bx bxl-instagram ma__media'></i></a>
+                        <a><i class='bx bxl-twitter ma__media'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="ma__foot__h">Department</h2>
+                    <p class="ma__foot__p">Shoes</p>
+                    <p class="ma__foot__p">Pants</p>
+                    <p class="ma__foot__p">Fill Outfit</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="ma__foot__h">Location</h2>
+                    <p class="ma__foot__p">Cairo-Eygpt</p>
+                    <p class="ma__foot__p">Damascus-syria</p>
+                    <p class="ma__foot__p">Beirut-lebano</p>
+                </div>
+            </div>
+            <div class="row ma__cpyright">
+                <div class="col-lg-6">
+                    <pre class="ma__foot__p">- <sub><i class='bx bx-copyright ma__cpysymbol'></i></sub> All Right Reserevd For Abdullah Manafikhi -</pre>
+                </div>
+                <div class="col-lg-6">
+                    <pre class="ma__foot__p">- privacy & policy -</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/index.js" ></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
