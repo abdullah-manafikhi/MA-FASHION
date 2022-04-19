@@ -303,7 +303,6 @@ button {
 
 @media (max-width: 600px) {
   body {
-    border: 2px solid red;
     width: 100%;
     padding: 0;
   }
